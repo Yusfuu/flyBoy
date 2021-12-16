@@ -50,15 +50,18 @@ const expresso = () => {
 
         response.json = toJSON(response);
         response.setCookie = setCookie(response);
-        response.render = render(response);
         break;
       }
     }
+
+    response.render = render(response);
 
     if (route) {
       route.callback(request, response);
     } else {
       // route not found
+      response.writeHead(404, { "Content-Type": "text/html" });
+      response.render('error@_404');
     }
 
   });

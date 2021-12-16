@@ -13,7 +13,7 @@ const render = (response) => {
     } catch (error) {
       // file not found
       response.writeHead(404, { "Content-Type": "text/html" });
-      response.end('ohhh no');
+      response.render('ohhh no');
     }
   };
 }

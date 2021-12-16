@@ -16,6 +16,10 @@ app.get('/fly', async (req, res) => {
   res.render('fly', { section: examples });
 });
 
+app.get('/', async (req, res) => {
+  res.render('fly', { section: examples });
+});
+
 app.get('/account/signin', (req, res) => res.render('account@signin'));
 app.get('/account/signup', (req, res) => res.render('account@signup'));
 
@@ -161,9 +165,7 @@ app.get('/admin', async (req, res) => {
 });
 
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
-});
+
 
 
 app.post('/email', async (req, res) => {
@@ -249,6 +251,12 @@ app.post('/email', async (req, res) => {
     html: mailGenerator.generate(email),
   });
 
-  res.writeHead(302, { location: "http://localhost:3000/fly" });
-  res.render('fly');
+  res.writeHead(302, { location: "/fly" });
+  return res.render('/fly');
+});
+
+
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
 });

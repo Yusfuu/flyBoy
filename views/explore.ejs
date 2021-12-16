@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>explore</title>
+</head>
+
+
+<body>
+
+  <div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+      <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-8 md:mb-12">Flights</h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 md:gap-6 xl:gap-8">
+
+        <!-- product - start -->
+
+        <!-- product - end -->
+
+
+
+        <% flights.forEach(function(flight){ %>
+          <div class="flex flex-col md:flex-row items-center border rounded-lg overflow-hidden">
+            <a href="#"
+              class="group w-full md:w-32 lg:w-48 h-48 md:h-full block self-start flex-shrink-0 bg-gray-100 overflow-hidden relative">
+              <img src="<%= decodeURIComponent(flight.url);%>" loading="lazy" alt="Photo by Lorenzo Herrera"
+                class="w-full h-full object-cover object-center absolute inset-0 transform group-hover:scale-110 transition duration-200" />
+            </a>
+
+            <div class="flex flex-col gap-2 p-4 lg:p-6">
+              <span class="text-gray-400 text-sm">
+                <%= flight.seats;%> seats
+              </span>
+
+              <h2 class="text-gray-800 text-xl font-bold">
+                <a href="#" class="hover:text-indigo-500 active:text-indigo-600 transition duration-100">
+                  <%= flight.departure_airport;%> to <%= flight.arrival_airport;%>
+                </a>
+              </h2>
+
+              <div>
+                <span class="text-gray-400 text-sm">
+                  <%= new Date(flight.departure_datetime).toLocaleString().split(',')[0]; %> - <%= new
+                      Date(flight.arrival_datetime).toLocaleString().split(',')[0]; %>
+                </span>
+              </div>
+              <a href="/explore/<%=flight.id;%>"
+                class="cursor-pointer self-baseline px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">more</a>
+            </div>
+          </div>
+          <% }); %>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

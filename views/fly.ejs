@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Fly</title>
+</head>
+<style>
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+        <p class="text-indigo-500 lg:text-lg font-semibold text-center mb-2 md:mb-3">Introducing</p>
+
+        <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">Revolutionary way to build the
+          web</h2>
+
+        <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">This is a section of some simple filler
+          text, also known as placeholder text. It shares some characteristics of a real written text but is random or
+          otherwise generated.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="flex justify-center flex-col items-center">
+    <form class="group relative flex gap-3">
+      <svg width="20" height="20" fill="currentColor"
+        class="absolute left-3 top-1/2 -mt-2.5 text-gray-400 pointer-events-none group-focus-within:text-blue-500">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z">
+        </path>
+      </svg>
+      <input type="text" placeholder="Quick search..."
+        class="transition text-sm leading-6 w-72 text-gray-900 placeholder-gray-400 rounded-md py-2 pl-10 ring-1 ring-gray-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <button class="rounded-md px-4 font-semibold  bg-sky-500 text-white shadow-sm">Search</button>
+    </form>
+    <a class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-indigo-50 text-indigo-600 hover:bg-indigo-200 hover:text-indigo-700 focus:ring-indigo-500 mt-8"
+      href="/explore">Explore<span class="sr-only">, grid template columns</span><svg
+        class="overflow-visible ml-3 text-indigo-300 group-hover:text-indigo-400" width="3" height="6" viewBox="0 0 3 6"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M0 0L3 3L0 6"></path>
+      </svg></a>
+  </section>
+
+  <section>
+    <div class="relative rounded-xl">
+      <div class="relative w-full  flex gap-6 snap-x scroll-mandatory scrollbar-hide overflow-x-auto py-14">
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+            src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=160&amp;q=80">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+            src="https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=160&amp;q=80">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+            src="https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=160&amp;q=80">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+            src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=160&amp;q=80">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+            src="https://images.unsplash.com/photo-1575424909138-46b05e5919ec?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=160&amp;q=80">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+            src="https://images.unsplash.com/photo-1559333086-b0a56225a93c?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=160&amp;q=80">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
+        <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-8 md:mb-12">What others say about us</h2>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-10 sm:gap-y-12 lg:divide-x">
+          <!-- quote - start -->
+          <div class="flex flex-col items-center gap-4 md:gap-6 sm:px-4 lg:px-8">
+            <div class="text-gray-600 text-center">“This is a section of some simple filler text, also known as
+              placeholder text.”</div>
+
+            <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-3">
+              <div class="w-12 md:w-14 h-12 md:h-14 bg-gray-100 rounded-full overflow-hidden shadow-lg">
+                <img src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112"
+                  loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
+              </div>
+
+              <div>
+                <div class="text-indigo-500 text-sm md:text-base font-bold text-center sm:text-left">John McCulling
+                </div>
+                <p class="text-gray-500 text-sm md:text-sm text-center sm:text-left">CEO / Datadrift</p>
+              </div>
+            </div>
+          </div>
+          <!-- quote - end -->
+
+          <!-- quote - start -->
+          <div class="flex flex-col items-center gap-4 md:gap-6 sm:px-4 lg:px-8">
+            <div class="text-gray-600 text-center">“This is a section of some simple filler text, also known as
+              placeholder text.”</div>
+
+            <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-3">
+              <div class="w-12 md:w-14 h-12 md:h-14 bg-gray-100 rounded-full overflow-hidden shadow-lg">
+                <img src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112"
+                  loading="lazy" alt="Photo by christian ferrer" class="w-full h-full object-cover object-center" />
+              </div>
+
+              <div>
+                <div class="text-indigo-500 text-sm md:text-base font-bold text-center sm:text-left">Kate Berg</div>
+                <p class="text-gray-500 text-sm md:text-sm text-center sm:text-left">CFO / Dashdash</p>
+              </div>
+            </div>
+          </div>
+          <!-- quote - end -->
+
+          <!-- quote - start -->
+          <div class="flex flex-col items-center gap-4 md:gap-6 sm:px-4 lg:px-8">
+            <div class="text-gray-600 text-center">“This is a section of some simple filler text, also known as
+              placeholder text.”</div>
+
+            <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-3">
+              <div class="w-12 md:w-14 h-12 md:h-14 bg-gray-100 rounded-full overflow-hidden shadow-lg">
+                <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&q=75&fit=crop&w=500"
+                  loading="lazy" alt="Photo by Ayo Ogunseinde" class="w-full h-full object-cover object-center" />
+              </div>
+
+              <div>
+                <div class="text-indigo-500 text-sm md:text-base font-bold text-center sm:text-left">Greg Jackson</div>
+                <p class="text-gray-500 text-sm md:text-sm text-center sm:text-left">CTO / Uptime</p>
+              </div>
+            </div>
+          </div>
+          <!-- quote - end -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div
+      class="relative z-10 bg-white rounded-xl shadow-xl ring-1 ring-gray-900/5 divide-y divide-gray-100 my-auto xl:mt-18">
+      <nav class="py-4 px-4 sm:px-6 lg:px-4 xl:px-6 text-sm font-medium">
+        <ul class="flex space-x-3">
+          <li>
+            <div class="px-3 py-2 rounded-md bg-gray-50 cursor-pointer">Top<span class="hidden sm:inline"> Rated</span>
+            </div>
+          </li>
+          <li>
+            <div class="px-3 py-2 rounded-md bg-sky-500 text-white cursor-pointer">New<span
+                class="hidden sm:inline lg:hidden xl:inline"> Releases</span></div>
+          </li>
+        </ul>
+      </nav>
+
+      <% section.forEach(function(flight){ %>
+        <article
+          class="p-4 sm:p-6 lg:p-4 xl:p-6 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 hidden sm:flex">
+          <img src="<%= flight.src; %>" loading="lazy" alt="" height="88" class="flex-none w-24 rounded-md bg-gray-100">
+          <div class="min-w-0 relative flex-auto">
+            <h2 class="font-semibold text-gray-900 truncate sm:pr-20">
+              <%= flight.name; %>
+            </h2>
+            <dl class="mt-2 flex flex-wrap text-sm leading-6 font-medium">
+              <div class="hidden absolute top-0 right-0 sm:flex items-center space-x-1">
+                <dt class="text-sky-500"><span class="sr-only">Star rating</span><svg width="16" height="20"
+                    fill="currentColor">
+                    <path
+                      d="M7.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118L.98 9.483c-.784-.57-.381-1.81.587-1.81H5.03a1 1 0 00.95-.69L7.05 3.69z">
+                    </path>
+                  </svg></dt>
+                <dd>
+                  <%= flight.rate; %>
+                </dd>
+              </div>
+              <div class="flex-none w-full mt-2 font-normal">
+                <dt class="sr-only">Cast</dt>
+                <dd class="text-gray-400">
+                  <%= flight.description; %>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+        <% }); %>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+        <div class="flex flex-col sm:flex-row justify-between items-center bg-gray-100 rounded-lg gap-4 p-4 md:p-8">
+          <div>
+            <h2 class="text-red-500 text-xl md:text-2xl font-bold">Travel update</h2>
+            <p class="text-gray-600">Coronavirus disease (COVID-19) may impact travel.</p>
+          </div>
+
+          <a href="#"
+            class="inline-block bg-green-500 hover:bg-green-600 active:bg-green-700 focus-visible:ring ring-green-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">See
+            travel advice</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
